@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yesteryear&display=swap');
+
+.txt-white { color: #FFF }
+.txt-pink  { color: #c8235d}
+.txt-grey  { color: #8b8b8d}
+
+.container {  max-width: 1110px;  margin: auto;}
+.clearfix::after { content: ""; clear: both; display: table }
+header {
+    background: url('../img/headerbg.jpg') center/cover;
+}
+header .container { 
+    position: relative;
+    min-height: 100vh;
+}
+header nav, header section {
+    position: absolute;
+}
+header nav {
+    top: 30px;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+header nav ul li { 
+    text-align: center; 
+    padding: 0 25px;
+    font: 1em Poppins;      
+} 
+header section {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    text-align: center;
+}
+header section p {
+    font: 1.1em/1.8 Poppins;     
+}
+h1 {
+    font: 2em Poppins, sans-serif;
+    text-transform: uppercase;
+}
+h2 {
+    font: 2em Yesteryear, cursive;
+    text-align: center;
+}
+h3 {
+    font: 1em Tahoma;
+    color: #0b0c0d;
+    text-transform: uppercase;
+} 
+h3 span { float: right } 
+hr {
+    width: 108px;
+    border: none;
+    border-bottom: 1px solid;
+}
+main section {
+    padding: 110px 0;
+}
+
+
+#story {
+    background: #962323;
+}
+#story img {
+    width: 100%;
+    height: 50vh;
+}
+#story article {
+    text-align: center;
+}
+#recipes {
+	width: 100%;
+    background: url('../img/recipes.jpg') center/cover;
+}
+#recipes p {text-align: center;}
+#menu {
+    background: #f3f4f7;
+}
+#menu article {
+    padding: 30px 10px;
+}
+#menu img {
+    width: 100%;
+    height: 50vh;
+}
+#menu  {
+    padding: 110px 0 0 0;
+}
+
+
+
+#f1 { width: 100%;
+    background: #25262a;
+    padding: 80px 0;
+	text-align:center;
+}
+#f2 {width: 100%;
+    background: #16171b;
+    padding: 50px 0;
+	text-align:center;
+}
+ 
+ 
+.padd15 {padding: 0 5px 15px 0;}
+.padd55 {padding: 0 0 55px 0;}
+#f1 h3{ font-size: 1.6em; padding: 0 0 55px 0;}
+#f1 p {font-size: .9em;}
+#f1 h4{ font-size: 1.2em; padding: 0 0 30px 0;}
+ 
+@media only screen and (min-width: 768px) {
+    header nav { width: 100%; top: 65px; }
+    header nav ul {float: right; }
+    header nav ul li { display: inline-block; }
+    h1 { font-size: 4.5em }
+    h2 { font-size: 3.5em }
+    #story img {
+        width: 42%;
+        height: 400px;
+        float: left;
+    }
+    #story article {
+        float: left;
+        width: 50%;
+        margin: 50px 0 0 8%;
+    }
+    .cols {
+        column-count: 2;
+        column-gap: 10%;
+    }
+	#recipes p {width:100%; padding: 4% 30% 14% 30%;}
+	#menu img {
+		width: 33.1%;
+		height: 365px;
+	}
+	 #f2 h4{ display: inline-block; padding:0 90px 0 0;}
+
+	 #restaurant {float:left; text-align: left; width:24%;}
+	 #sitemap {float:left;width:24%;}
+	 #category {float:left;width:4%;}
+	 #menu2 {float:left;width:24%;}
+	 #contactus {float:left;width:24%;}
+	 .row::after { content: ""; clear: both; display: table; }
+}

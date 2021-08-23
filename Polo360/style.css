@@ -1,0 +1,128 @@
+header{
+	background: url('img/header.jpg') repeat-x;
+}
+.container {
+	max-width:940px;
+	margin:auto;
+}
+header img{
+	margin:auto;
+	width:100%;
+}
+header .container { 
+    position: relative;
+}
+header nav{
+    position: absolute;
+	padding: 35px 0px 40px 0px; 
+}
+header nav ul li{
+	padding: 20px 10px 40px 0px;
+}
+header nav ul li {
+	text-align:center;
+	font: bold .7rem Tahoma;
+	color:#b7b7b7;
+}
+header nav ul li a{
+	display:block;
+	text-align:center;
+	font: bold .9rem Georgia;
+	color: #666;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+main{
+	background: #fff url('img/mainbg.jpg') repeat-x;
+}
+main div {padding: 10px 0 0 0;}
+.height{height: 340px; object-fit:cover; }
+main h1 {
+		font: bold 24px "Georgia";
+		color: #000000;
+		text-align: center;
+		padding: 20px 0;
+}
+hr {border-top: 1px solid #e4e4e4;}
+main .col{
+	width:100%;
+	margin:35px 20px 35px 0;
+}
+main .col:last-child{
+	margin: 30px 0 35px 0;
+}
+main h2 {
+	font: 1.3em "Georgia";
+	color: #11719e;
+}
+main h4{ 
+	font: .75em "Helvetica";
+	color: #8c8c8c;
+}	
+main p {
+	padding:10px 0;
+	font-size:.75em;
+	color: #444444;
+}
+.imgmain{
+	width:100%;
+}
+button{
+	background: url('img/button.jpg') repeat-y;
+	width:161px;
+	border-radius:5px; 
+	border: 1px solid #d8d8d8;
+	color:#3f8baf;
+	text-align:left;
+	padding: 10px 13px;
+}	
+button span{float:right;color:#3f8baf;}	
+h3 {}
+.hrb {border-top: 1px dashed #e4e4e4;}
+i {
+		display:inline-block;
+		font-size: 2em;
+		padding:0px 10px 40px 10px;
+		color: red;
+		
+}
+input, textarea{
+	width: 100%;
+	border-radius:5px;
+	border:1px solid #cfcfcf;
+	color: #cfcfcf;
+	padding: 15px;
+	margin: 20px;
+}
+.mrgn{margin: 0 0 15px 0;}
+footer{
+	height:300px;
+	background: #333;
+	border-top: 10px solid #4c4c4c;
+}
+footer p{color: #7e7e7e;}
+.floatl {
+	float:left;
+	padding: 10px 5px 15px 0;
+}
+.floatr {
+	float:right;
+	padding: 10px 5px 15px 0;
+}
+.imgcontact{
+	padding: 5px;
+	border-radius: 5px;
+	border:1px solid #cfcfcf;
+	background: #f0f0f0;
+	margin: 0 5px 0 0;
+}
+@media only screen and (min-width: 768px) {
+    header nav ul {float: right; }
+    header nav ul li { display: inline-block; }
+	header nav ul a {  display: block; }
+	header img{width: 286px;}
+	header nav ul li {text-align: left;}
+	header nav ul li a{text-align: left;}
+	
+	main .col{width:90px;}
+}
